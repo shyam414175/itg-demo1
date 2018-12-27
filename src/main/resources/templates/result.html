@@ -1,0 +1,31 @@
+<!DOCTYPE HTML>
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>Result page</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    
+    
+    
+</head>
+<body>
+<div class="container">
+<div class="row">
+
+<div class="horizontal-form">
+   <div class="form-group">
+     <h1 class="text-center text-danger control-label">Result</h1>
+   </div>
+   <div class="from-group"> 
+     <p class="text-center text-primary control-label" th:text="'id: ' + ${customer.id}" />
+   </div> 
+    <p class="text-center text-primary" th:text="'First Name: ' + ${customer.firstname}" />
+    <p class="text-center text-primary" th:text="'Last Name: ' + ${customer.lastname}" />
+    <a class="text-center text-primary" href="/form1">Submit another Customer Form</a>
+</div>    
+</div>  
+</div>  
+</body>
+</html>
